@@ -24,6 +24,18 @@ ChurnSage is a machine learning-powered solution designed to **predict customer 
 Customer churn significantly impacts profitability. Proactively identifying customers likely to leave helps businesses focus their efforts on retention, which is **5–25 times cheaper** than acquiring new customers. This project serves as an analytical foundation for a **Churn Prediction System**.
 
 ---
+## 📁 Project Structure
+
+ChurnSage-Customer-Retention-Intelligence/
+│
+├── data/ # Raw and cleaned datasets
+├── images/ # Visuals used in notebook and README
+├── notebooks/ # Main Jupyter Notebook
+├── models/ # Saved models (if applicable)
+├── requirements.txt # Project dependencies
+└── README.md # Project documentation
+
+---
 
 ## 🧠 Machine Learning Workflow
 
@@ -85,19 +97,6 @@ Customer churn significantly impacts profitability. Proactively identifying cust
 - Promote **bundled packages** that include tech support and longer contracts.
 - Create **targeted marketing campaigns** based on churn risk segments.
 - Establish a **churn dashboard** using these insights to monitor trends in real time.
-
----
-
-## 📁 Project Structure
-
-ChurnSage-Customer-Retention-Intelligence/
-│
-├── data/ # Raw and cleaned datasets
-├── images/ # Visuals used in notebook and README
-├── notebooks/ # Main Jupyter Notebook
-├── models/ # Saved models (if applicable)
-├── requirements.txt # Project dependencies
-└── README.md # Project documentation
 
 
 ---
@@ -166,7 +165,7 @@ git clone https://github.com/OndiekiFrank/ChurnSage-Customer-Retention-Intellige
 cd ChurnSage-Customer-Retention-Intelligence
 pip install -r requirements.txt
 jupyter notebook
-
+```
 ---
 
 ## 🙋 Author
