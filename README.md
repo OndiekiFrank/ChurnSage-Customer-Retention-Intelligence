@@ -102,6 +102,47 @@ ChurnSage-Customer-Retention-Intelligence/
 
 ---
 
+## 🛠️ Environment Setup (with Conda)
+
+This project uses Conda environments for reproducibility across platforms. To replicate the setup:
+
+### 🔧 Step-by-Step Instructions
+
+1. **Install Conda**:  
+   [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/products/distribution)
+
+2. **Clone the repository**:
+   ```bash
+   git clone https://github.com/OndiekiFrank/ChurnSage-Customer-Retention-Intelligence.git
+   cd ChurnSage-Customer-Retention-Intelligence
+   ```
+
+## ⚙️ Setup Instructions with Conda
+
+### 📌 Choose the Right Conda Environment File
+
+Inside the `churnsage-envs/` folder, select the appropriate environment file based on your operating system:
+
+| Operating System      | YAML File                     |
+|-----------------------|-------------------------------|
+| Ubuntu/Linux          | `ubuntu_environment.yml`      |
+| Windows               | `win_environment.yml`         |
+| macOS (CPU only)      | `mac_environment.yml`         |
+| macOS (GPU support)   | `mac_environment_tf.yml`      |
+
+---
+
+### 🔧 Create and Activate the Conda Environment
+
+```bash
+conda env create -f churnsage-envs/ubuntu_environment.yml
+conda activate learn-env
+```
+Launch the notebook:
+```bash
+jupyter notebook
+```
+
 ## 🛠️ Tools & Technologies
 
 - Python, NumPy, Pandas
@@ -112,6 +153,13 @@ ChurnSage-Customer-Retention-Intelligence/
 ---
 
 ## 📚 How to Run
+
+Option 2: Using conda (recommended)
+```bash
+conda env create -f churnsage-env.yml
+conda activate learn-env
+jupyter notebook
+```
 
 ```bash
 git clone https://github.com/OndiekiFrank/ChurnSage-Customer-Retention-Intelligence.git
