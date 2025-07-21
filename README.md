@@ -118,3 +118,18 @@ git clone https://github.com/OndiekiFrank/ChurnSage-Customer-Retention-Intellige
 cd ChurnSage-Customer-Retention-Intelligence
 pip install -r requirements.txt
 jupyter notebook
+
+---
+
+## 🙋 Author
+
+**Frankline Ondieki Ombachi**  
+*Machine Learning Engineer | DevOps Engineer | Data Scientist*  
+[LinkedIn](https://www.linkedin.com/in/frankline-ondieki-39a61828a/) | [GitHub](https://github.com/OndiekiFrank)
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for full details.
