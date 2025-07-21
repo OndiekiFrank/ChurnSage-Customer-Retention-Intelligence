@@ -141,6 +141,17 @@ Launch the notebook:
 ```bash
 jupyter notebook
 ```
+---
+
+### Option 2: Using conda (recommended)
+
+```bash
+git clone https://github.com/OndiekiFrank/ChurnSage-Customer-Retention-Intelligence.git
+cd ChurnSage-Customer-Retention-Intelligence
+pip install -r requirements.txt
+jupyter notebook
+```
+---
 
 ## 🛠️ Tools & Technologies
 
@@ -149,23 +160,6 @@ jupyter notebook
 - Jupyter Notebook
 - Git & GitHub
 
----
-
-## 📚 How to Run
-
-Option 2: Using conda (recommended)
-```bash
-conda env create -f churnsage-env.yml
-conda activate learn-env
-jupyter notebook
-```
-
-```bash
-git clone https://github.com/OndiekiFrank/ChurnSage-Customer-Retention-Intelligence.git
-cd ChurnSage-Customer-Retention-Intelligence
-pip install -r requirements.txt
-jupyter notebook
-```
 ---
 
 ## 🙋 Author
