@@ -1,0 +1,30 @@
+# Core Data Science Libraries
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+
+# Visualization Libraries
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# Machine Learning
+scikit-learn==1.5.0
+xgboost==2.0.3
+
+# Model Evaluation & Metrics
+imbalanced-learn==0.12.2
+
+# Notebook Environment
+jupyter==1.0.0
+notebook==7.2.0
+ipykernel==6.29.4
+
+# Utility Tools
+joblib==1.4.2
+tqdm==4.66.4
+
+# Plotting Enhancements
+plotly==5.22.0
+
+# For YAML export/import if needed later
+pyyaml==6.0.1
