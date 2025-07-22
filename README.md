@@ -85,18 +85,83 @@ ChurnSage-Customer-Retention-Intelligence/
 
 ![Churn Insight](images/WhatsApp%20Image%202025-07-21%20at%2012.38.10.jpeg)
 
-- Customers on **month-to-month contracts**, **without tech support**, or with **high monthly charges** were more likely to churn.
-- Contract type, internet service, and tenure length were significant predictors.
-- Optimizing the threshold to 0.30 improved the detection of churners with minimal drop in precision.
+###  Final Insights
+
+After thorough preprocessing, feature engineering, and model experimentation, the following key insights emerged from my churn analysis:
 
 ---
 
-## 💡 Recommendations
+###  1. Churn Behavior is Influenced by Key Features:
+- **Customer Service Calls**: Customers with **4 or more service calls** have a high churn rate.
+- **International Plan**: Subscribing to an international plan is strongly associated with churn.
+- **Total Day Minutes** and **Total Charge Metrics** show strong predictive power.
 
-- **Offer loyalty incentives** for customers on month-to-month plans.
-- Promote **bundled packages** that include tech support and longer contracts.
-- Create **targeted marketing campaigns** based on churn risk segments.
-- Establish a **churn dashboard** using these insights to monitor trends in real time.
+---
+
+###  2. Model Performance Summary:
+
+| Model                     | Accuracy | Recall (Churn) | Precision (Churn) | F1 Score (Churn) |
+|---------------------------|----------|----------------|-------------------|------------------|
+| Logistic Regression       | 86%      | 0.42           | 0.60              | 0.49             |
+| K-Nearest Neighbors       | 88%      | 0.22           | 0.67              | 0.33             |
+| Decision Tree             | 91%      | 0.52           | 0.80              | 0.63             |
+| Random Forest             | 92%      | 0.56           | 0.86              | 0.68             |
+| Gradient Boosting         | 93%      | 0.61           | 0.88              | 0.72             |
+| Voting Classifier         | 88%      | 0.20           | 0.95              | 0.33             |
+| **Gradient Boosting (Threshold = 0.30)** | **94%** | **0.74**       | **0.84**         | **0.79**         |
+
+ **Gradient Boosting with Threshold Tuning** provided the best balance between sensitivity (recall) and specificity.
+
+---
+
+###  . Threshold Tuning Enhanced Churn Detection:
+- Default thresholds (0.5) underperform for the minority churn class.
+- Lowering the threshold to **0.30** improved recall from **0.61 to 0.74** while maintaining high accuracy (94%).
+
+---
+
+##  Final Recommendations
+
+Based on my comprehensive analysis, I recommend the following strategic actions:
+
+---
+
+###  1. **Focus on Customer Service Experience**
+- Implement proactive retention campaigns targeting customers with **frequent customer service interactions**.
+- Use sentiment analysis on support interactions to detect churn signals early.
+
+---
+
+###  2. **Review International Plan Offering**
+- The **international plan** is a red flag for churn.
+- Investigate whether pricing, quality, or satisfaction issues exist with this plan.
+- Consider offering personalized plans or incentives to improve satisfaction.
+
+---
+
+###  3. **Monitor High-Usage Customers**
+- Customers with **high day-time call minutes** and **charges** tend to churn more.
+- Consider targeted loyalty programs for these high-value customers.
+
+---
+
+###  4. **Deploy the Optimized Gradient Boosting Model**
+- Integrate the **GBM with threshold tuning (0.30)** into the company’s CRM.
+- Monitor its predictions weekly and continuously refine based on new data.
+
+---
+
+###  5. **Address Class Imbalance**
+- Future modeling efforts should explore:
+  - **SMOTE (Synthetic Minority Over-sampling Technique)**
+  - **Class weight adjustments**
+  - **Ensemble models optimized for imbalance**
+
+---
+
+### 6. **Continue Model Monitoring and Re-training**
+- Churn behavior may evolve over time.
+- Retrain models quarterly with updated data to retain accuracy and relevance.
 
 
 ---
