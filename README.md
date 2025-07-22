@@ -4,13 +4,13 @@
 
 ![Threshold Tuning](images/WhatsApp%20Image%202025-07-21%20at%2012.38.10%20(1).jpeg)
 
-## 📌 Project Overview
+##  Project Overview
 
 ChurnSage is a machine learning-powered solution designed to **predict customer churn** with high accuracy and provide **data-driven strategies** to improve customer retention. This project leverages Python, Scikit-learn, and visual analytics to turn raw customer data into actionable business insights.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Predict which customers are likely to churn.
 - Understand the key factors driving churn.
@@ -19,13 +19,14 @@ ChurnSage is a machine learning-powered solution designed to **predict customer 
 
 ---
 
-## 📊 Business Context
+##  Business Context
 
 Customer churn significantly impacts profitability. Proactively identifying customers likely to leave helps businesses focus their efforts on retention, which is **5–25 times cheaper** than acquiring new customers. This project serves as an analytical foundation for a **Churn Prediction System**.
 
 ---
-## 📁 Project Structure
+##  Project Structure
 
+```plaintext
 ChurnSage-Customer-Retention-Intelligence/
 │
 ├── data/ # Raw and cleaned datasets
@@ -34,10 +35,11 @@ ChurnSage-Customer-Retention-Intelligence/
 ├── models/ # Saved models (if applicable)
 ├── requirements.txt # Project dependencies
 └── README.md # Project documentation
+```
 
 ---
 
-## 🧠 Machine Learning Workflow
+##  Machine Learning Workflow
 
 ### 1. Data Understanding
 - Loaded and explored telecom customer data.
@@ -70,7 +72,7 @@ ChurnSage-Customer-Retention-Intelligence/
 
 ---
 
-## 🏆 Final Model Performance (Gradient Boosting)
+##  Final Model Performance (Gradient Boosting)
 
 - **Accuracy**: 94%
 - **Precision (Churn)**: 84%
@@ -81,7 +83,7 @@ ChurnSage-Customer-Retention-Intelligence/
 
 ---
 
-## 📈 Key Insights
+## Key Insights
 
 ![Churn Insight](images/WhatsApp%20Image%202025-07-21%20at%2012.38.10.jpeg)
 
@@ -165,7 +167,7 @@ Based on my comprehensive analysis, I recommend the following strategic actions:
 
 
 ---
-## 📊 Interactive Dashboard
+## Interactive Dashboard
 
 Explore the interactive Tableau dashboard for more churn insights and visualizations:
 
@@ -173,11 +175,11 @@ Explore the interactive Tableau dashboard for more churn insights and visualizat
 
 ---
 
-## 🛠️ Environment Setup (with Conda)
+## Environment Setup (with Conda)
 
 This project uses Conda environments for reproducibility across platforms. To replicate the setup:
 
-### 🔧 Step-by-Step Instructions
+### Step-by-Step Instructions
 
 1. **Install Conda**:  
    [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/products/distribution)
@@ -190,7 +192,7 @@ This project uses Conda environments for reproducibility across platforms. To re
 
 ## ⚙️ Setup Instructions with Conda
 
-### 📌 Choose the Right Conda Environment File
+### Choose the Right Conda Environment File
 
 Inside the `churnsage-envs/` folder, select the appropriate environment file based on your operating system:
 
@@ -203,7 +205,7 @@ Inside the `churnsage-envs/` folder, select the appropriate environment file bas
 
 ---
 
-### 🔧 Create and Activate the Conda Environment
+### Create and Activate the Conda Environment
 
 ```bash
 conda env create -f churnsage-envs/ubuntu_environment.yml
@@ -220,12 +222,9 @@ jupyter notebook
 ```bash
 git clone https://github.com/OndiekiFrank/ChurnSage-Customer-Retention-Intelligence.git
 cd ChurnSage-Customer-Retention-Intelligence
-pip install -r requirements.txt
-jupyter notebook
+pip install -r requirements.tx
 ```
----
-
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 - Python, NumPy, Pandas
 - Scikit-learn, Matplotlib, Seaborn
@@ -234,7 +233,7 @@ jupyter notebook
 
 ---
 
-## 🙋 Author
+##  Author
 
 **Frankline Ondieki Ombachi**  
 *Machine Learning Engineer | DevOps Engineer | Data Scientist*  
@@ -242,7 +241,7 @@ jupyter notebook
 
 ---
 
-## 📝 License
+##  License
 
 This project is licensed under the **MIT License**.  
 See the [LICENSE](LICENSE) file for full details.
