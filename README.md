@@ -100,6 +100,13 @@ ChurnSage-Customer-Retention-Intelligence/
 
 
 ---
+## 📊 Interactive Dashboard
+
+Explore the interactive Tableau dashboard for more churn insights and visualizations:
+
+🔗 [View on Tableau](https://public.tableau.com/app/profile/frankline.ondieki/viz/Customerchurn_17531429110990/Dashboard1?publish=yes)
+
+---
 
 ## 🛠️ Environment Setup (with Conda)
 
